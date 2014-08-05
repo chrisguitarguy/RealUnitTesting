@@ -1,0 +1,16 @@
+{
+    "testsuites": {
+        "unit": {
+            "bootstrap": "test/bootstrap.php",
+            "directories": "test"
+        }
+    },
+    "coverage": {
+        "reports": {
+            "html": "coverage"
+        },
+        "directories": [
+            "src"
+        ]
+    }
+}
