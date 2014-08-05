@@ -27,7 +27,7 @@ class DefaultCartTest
         );
     }
 
-    public function testTotal()
+    public function testTotalShouldBeTheSumOfProductCostsInCart()
     {
         $total = $cart->total();
 
