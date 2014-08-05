@@ -14,8 +14,7 @@ class DefaultCartTest
 {
     use \Counterpart\Assert;
 
-    // we will change this name
-    public function testTotal()
+    public function testEmptyCartHasZeroTotal()
     {
         $total = $cart->total();
 
