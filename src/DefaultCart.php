@@ -34,7 +34,7 @@ class DefaultCart implements Cart
     {
         $total = 0.0;
         foreach ($this->products as $product) {
-            $total += $product->amount();
+            $total += $product->cost();
         }
 
         return $total;

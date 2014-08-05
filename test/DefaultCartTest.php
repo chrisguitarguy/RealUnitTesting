@@ -29,6 +29,10 @@ class DefaultCartTest
 
     public function testTotalShouldBeTheSumOfProductCostsInCart()
     {
+        $cart = new DefaultCart();
+        $cart->addProduct(new StubProduct('one product', 10.50));
+        $cart->addProduct(new StubProduct('two product', 10.50));
+
         $total = $cart->total();
 
         $this->assertEquals(
