@@ -29,6 +29,6 @@ class DefaultCartTest
 
     public function testTotal()
     {
-
+        $total = $cart->total();
     }
 }
