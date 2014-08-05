@@ -16,6 +16,8 @@ class DefaultCartTest
 
     public function testEmptyCartHasZeroTotal()
     {
+        $cart = new DefaultCart();
+
         $total = $cart->total();
 
         $this->assertEquals(
