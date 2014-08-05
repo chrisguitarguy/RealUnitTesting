@@ -26,4 +26,9 @@ class DefaultCartTest
             'Total should be zero for empty carts'
         );
     }
+
+    public function testTotal()
+    {
+
+    }
 }
