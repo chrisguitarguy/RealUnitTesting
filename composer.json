@@ -1,0 +1,12 @@
+{
+    "name": "chrisguitarguy/real-unit-testing",
+    "require": {
+        "php": ">=5.4",
+        "demeanor/demeanor": "~0.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Chrisguitarguy\\RealUnitTesting\\": "src/"
+        }
+    }
+}

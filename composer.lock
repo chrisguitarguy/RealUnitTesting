@@ -1,0 +1,506 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "6409ab9853c474629c64193589bc8967",
+    "packages": [
+        {
+            "name": "chrisguitarguy/annotation",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chrisguitarguy/Annotation.git",
+                "reference": "ba81072b6b269eaf9ba408c28238fdb69952cd8a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chrisguitarguy/Annotation/zipball/ba81072b6b269eaf9ba408c28238fdb69952cd8a",
+                "reference": "ba81072b6b269eaf9ba408c28238fdb69952cd8a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Chrisguitarguy\\Annotation\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christopher Davis",
+                    "homepage": "http://christopherdavis.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A little annotation library",
+            "homepage": "https://github.com/chrisguitarguy/Annotation",
+            "keywords": [
+                "annotation",
+                "annotations"
+            ],
+            "time": "2014-05-29 03:08:29"
+        },
+        {
+            "name": "counterpart/counterpart",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chrisguitarguy/Counterpart.git",
+                "reference": "6eb89d4660a9ae3377575c2ebfa3797eef8bc08e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chrisguitarguy/Counterpart/zipball/6eb89d4660a9ae3377575c2ebfa3797eef8bc08e",
+                "reference": "6eb89d4660a9ae3377575c2ebfa3797eef8bc08e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "sebastian/diff": "~1.1",
+                "sebastian/exporter": "~1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.1",
+                "sami/sami": "~1.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Counterpart\\": "src/"
+                },
+                "files": [
+                    "src/utilities.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Christopher Davis",
+                    "homepage": "http://christopherdavis.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A set of generic matchers -- for seeing if one value matches another",
+            "homepage": "http://docs.counterpartphp.org",
+            "keywords": [
+                "assert",
+                "matcher",
+                "testing"
+            ],
+            "time": "2014-07-30 00:23:04"
+        },
+        {
+            "name": "demeanor/demeanor",
+            "version": "0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chrisguitarguy/Demeanor.git",
+                "reference": "e8866ee91b506ececbbf70f7e8c6d2a7c92c256d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chrisguitarguy/Demeanor/zipball/e8866ee91b506ececbbf70f7e8c6d2a7c92c256d",
+                "reference": "e8866ee91b506ececbbf70f7e8c6d2a7c92c256d",
+                "shasum": ""
+            },
+            "require": {
+                "chrisguitarguy/annotation": "~1.0",
+                "counterpart/counterpart": "~1.4",
+                "mockery/mockery": "~0.9",
+                "php": ">=5.4",
+                "symfony/console": "~2.4",
+                "symfony/process": "~2.4",
+                "symfony/stopwatch": "~2.4"
+            },
+            "bin": [
+                "demeanor"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Demeanor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Christopher Davis",
+                    "homepage": "http://christopherdavis.me"
+                }
+            ],
+            "description": "A testing framework/harness that supports Spec and XUnit style tests",
+            "homepage": "http://docs.demeanorphp.org/",
+            "keywords": [
+                "demeanor",
+                "test",
+                "testing",
+                "xunit"
+            ],
+            "time": "2014-07-30 00:32:40"
+        },
+        {
+            "name": "mockery/mockery",
+            "version": "0.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/padraic/mockery.git",
+                "reference": "17f63ee40ed14a8afb7ba1f0ae15cc4491d719d1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/padraic/mockery/zipball/17f63ee40ed14a8afb7ba1f0ae15cc4491d719d1",
+                "reference": "17f63ee40ed14a8afb7ba1f0ae15cc4491d719d1",
+                "shasum": ""
+            },
+            "require": {
+                "lib-pcre": ">=7.0",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "hamcrest/hamcrest-php": "~1.1",
+                "phpunit/phpunit": "~4.0",
+                "satooshi/php-coveralls": "~0.7@dev"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.9.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mockery": "library/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Pádraic Brady",
+                    "email": "padraic.brady@gmail.com",
+                    "homepage": "http://blog.astrumfutura.com"
+                },
+                {
+                    "name": "Dave Marshall",
+                    "email": "dave.marshall@atstsolutions.co.uk",
+                    "homepage": "http://davedevelopment.co.uk"
+                }
+            ],
+            "description": "Mockery is a simple yet flexible PHP mock object framework for use in unit testing with PHPUnit, PHPSpec or any other testing framework. Its core goal is to offer a test double framework with a succint API capable of clearly defining all possible object operations and interactions using a human readable Domain Specific Language (DSL). Designed as a drop in alternative to PHPUnit's phpunit-mock-objects library, Mockery is easy to integrate with PHPUnit and can operate alongside phpunit-mock-objects without the World ending.",
+            "homepage": "http://github.com/padraic/mockery",
+            "keywords": [
+                "BDD",
+                "TDD",
+                "library",
+                "mock",
+                "mock objects",
+                "mockery",
+                "stub",
+                "test",
+                "test double",
+                "testing"
+            ],
+            "time": "2014-05-02 12:16:45"
+        },
+        {
+            "name": "sebastian/diff",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/diff.git",
+                "reference": "1e091702a5a38e6b4c1ba9ca816e3dd343df2e2d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/1e091702a5a38e6b4c1ba9ca816e3dd343df2e2d",
+                "reference": "1e091702a5a38e6b4c1ba9ca816e3dd343df2e2d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                },
+                {
+                    "name": "Kore Nordmann",
+                    "email": "mail@kore-nordmann.de"
+                }
+            ],
+            "description": "Diff implementation",
+            "homepage": "http://www.github.com/sebastianbergmann/diff",
+            "keywords": [
+                "diff"
+            ],
+            "time": "2013-08-03 16:46:33"
+        },
+        {
+            "name": "sebastian/exporter",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/exporter.git",
+                "reference": "1f9a98e6f5dfe0524cb8c6166f7c82f3e9ae1529"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/1f9a98e6f5dfe0524cb8c6166f7c82f3e9ae1529",
+                "reference": "1f9a98e6f5dfe0524cb8c6166f7c82f3e9ae1529",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.0.*@dev"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                },
+                {
+                    "name": "Jeff Welch",
+                    "email": "whatthejeff@gmail.com"
+                },
+                {
+                    "name": "Volker Dusch",
+                    "email": "github@wallbash.com"
+                },
+                {
+                    "name": "Adam Harvey",
+                    "email": "aharvey@php.net",
+                    "role": "Lead"
+                },
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@2bepublished.at"
+                }
+            ],
+            "description": "Provides the functionality to export PHP variables for visualization",
+            "homepage": "http://www.github.com/sebastianbergmann/exporter",
+            "keywords": [
+                "export",
+                "exporter"
+            ],
+            "time": "2014-02-16 08:26:31"
+        },
+        {
+            "name": "symfony/console",
+            "version": "v2.5.2",
+            "target-dir": "Symfony/Component/Console",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Console.git",
+                "reference": "386fa63407805959bd2c5fe540294721ad4224c8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/386fa63407805959bd2c5fe540294721ad4224c8",
+                "reference": "386fa63407805959bd2c5fe540294721ad4224c8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/event-dispatcher": "~2.1"
+            },
+            "suggest": {
+                "psr/log": "For using the console logger",
+                "symfony/event-dispatcher": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Console\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Console Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-07-15 14:15:12"
+        },
+        {
+            "name": "symfony/process",
+            "version": "v2.5.2",
+            "target-dir": "Symfony/Component/Process",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Process.git",
+                "reference": "5e53efbf61a7fbf73c79e3e08feea50f64c20bfa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/5e53efbf61a7fbf73c79e3e08feea50f64c20bfa",
+                "reference": "5e53efbf61a7fbf73c79e3e08feea50f64c20bfa",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Process\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Process Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-07-09 09:05:48"
+        },
+        {
+            "name": "symfony/stopwatch",
+            "version": "v2.5.2",
+            "target-dir": "Symfony/Component/Stopwatch",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Stopwatch.git",
+                "reference": "13cb004db921ec40d41689f471e3667037a8087e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Stopwatch/zipball/13cb004db921ec40d41689f471e3667037a8087e",
+                "reference": "13cb004db921ec40d41689f471e3667037a8087e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Stopwatch\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Stopwatch Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-07-09 09:05:48"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "platform": {
+        "php": ">=5.4"
+    },
+    "platform-dev": []
+}
