@@ -30,5 +30,11 @@ class DefaultCartTest
     public function testTotal()
     {
         $total = $cart->total();
+
+        $this->assertEquals(
+            21.0,
+            $total,
+            'Total should be zero for empty carts'
+        );
     }
 }
