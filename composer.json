@@ -2,6 +2,7 @@
     "name": "chrisguitarguy/real-unit-testing",
     "require": {
         "php": ">=5.4",
+        "sebastian/money": "~1.3",
         "demeanor/demeanor": "~0.4"
     },
     "autoload": {

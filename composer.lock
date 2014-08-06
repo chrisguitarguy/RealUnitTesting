@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6409ab9853c474629c64193589bc8967",
+    "hash": "4712fc35e0a344cd6cda24a0f9c9d473",
     "packages": [
         {
             "name": "chrisguitarguy/annotation",
@@ -337,6 +337,55 @@
                 "exporter"
             ],
             "time": "2014-02-16 08:26:31"
+        },
+        {
+            "name": "sebastian/money",
+            "version": "v1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/money.git",
+                "reference": "79666982385087298eea4b9f05bdc2b431a72821"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/money/zipball/79666982385087298eea4b9f05bdc2b431a72821",
+                "reference": "79666982385087298eea4b9f05bdc2b431a72821",
+                "shasum": ""
+            },
+            "require": {
+                "ext-intl": "*",
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                }
+            ],
+            "description": "Value Object that represents a monetary value (using a currency's smallest unit)",
+            "homepage": "http://www.github.com/sebastianbergmann/money",
+            "keywords": [
+                "money"
+            ],
+            "time": "2014-07-21 07:05:52"
         },
         {
             "name": "symfony/console",
