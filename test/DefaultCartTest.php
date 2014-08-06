@@ -10,36 +10,39 @@
 
 namespace Chrisguitarguy\RealUnitTesting;
 
+use SebastianBergmann\Money\Money;
+use SebastianBergmann\Money\Currency;
+
 class DefaultCartTest
 {
     use \Counterpart\Assert;
 
     public function testEmptyCartHasZeroTotal()
     {
-        $cart = new DefaultCart();
+        $currency = new Currency('USD');
+        $cart = new DefaultCart($currency);
 
         $total = $cart->total();
 
         $this->assertMoney($total);
-        $this->assertEquals(
-            0.0,
-            $total,
+        $this->assertTrue(
+            (new Money(0, $currency))->equals($total),
             'Total should be zero for empty carts'
         );
     }
 
     public function testTotalShouldBeTheSumOfProductCostsInCart()
     {
-        $cart = new DefaultCart();
-        $cart->addProduct(new StubProduct('one product', 10.50));
-        $cart->addProduct(new StubProduct('two product', 10.50));
+        $currency = new Currency('USD');
+        $cart = new DefaultCart($currency);
+        $cart->addProduct(new StubProduct('one product', new Money(1050, $currency)));
+        $cart->addProduct(new StubProduct('two product', new Money(1050, $currency)));
 
         $total = $cart->total();
 
         $this->assertMoney($total);
-        $this->assertEquals(
-            21.0,
-            $total,
+        $this->assertTrue(
+            (new Money(2100, $currency))->equals($total),
             'Total should be zero for empty carts'
         );
     }
