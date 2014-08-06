@@ -20,6 +20,7 @@ class DefaultCartTest
 
         $total = $cart->total();
 
+        $this->assertMoney($total);
         $this->assertEquals(
             0.0,
             $total,
@@ -35,10 +36,19 @@ class DefaultCartTest
 
         $total = $cart->total();
 
+        $this->assertMoney($total);
         $this->assertEquals(
             21.0,
             $total,
             'Total should be zero for empty carts'
+        );
+    }
+
+    private function assertMoney($object)
+    {
+        $this->assertInstanceOf(
+            'SebastianBergmann\\Money\\Currency',
+            $object
         );
     }
 }
