@@ -47,7 +47,7 @@ class DefaultCartTest
     private function assertMoney($object)
     {
         $this->assertInstanceOf(
-            'SebastianBergmann\\Money\\Currency',
+            'SebastianBergmann\\Money\\Money',
             $object
         );
     }
