@@ -10,6 +10,7 @@
 
 namespace Chrisguitarguy\RealUnitTesting;
 
+use SebastianBergmann\Money\Money;
 use SebastianBergmann\Money\Currency;
 
 /**
@@ -48,9 +49,9 @@ class DefaultCart implements Cart
      */
     public function total()
     {
-        $total = 0.0;
+        $total = new Money(0, $this->currency);
         foreach ($this->products as $product) {
-            $total += $product->cost();
+            $total = $total->add($product->cost());
         }
 
         return $total;
