@@ -29,7 +29,7 @@ interface Product
      * Get the cost of the product.
      *
      * @since   1.0
-     * @return  float
+     * @return  SebastianBergmann\Money\Money
      */
     public function cost();
 }

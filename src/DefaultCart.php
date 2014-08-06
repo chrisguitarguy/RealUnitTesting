@@ -10,6 +10,8 @@
 
 namespace Chrisguitarguy\RealUnitTesting;
 
+use SebastianBergmann\Money\Currency;
+
 /**
  * The default implementation of the cart.
  *
@@ -17,7 +19,21 @@ namespace Chrisguitarguy\RealUnitTesting;
  */
 class DefaultCart implements Cart
 {
+    const DEFAULT_CURRENCY = 'USD';
+
     private $products = array();
+
+    /**
+     * The currency in which the carts values are stored.
+     *
+     * @since   1.1
+     */
+    private $currency;
+
+    public function __construct(Currency $currency=null)
+    {
+        $this->currency = $currency ?: new Currency(self::DEFAULT_CURRENCY);
+    }
 
     /**
      * {@inheritdoc}

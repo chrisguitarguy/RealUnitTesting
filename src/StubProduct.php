@@ -10,6 +10,8 @@
 
 namespace Chrisguitarguy\RealUnitTesting;
 
+use SebastianBergmann\Money\Money;
+
 /**
  * For our proposes the default implementation of product is just a stub.
  *
@@ -18,9 +20,13 @@ namespace Chrisguitarguy\RealUnitTesting;
 class StubProduct implements Product
 {
     private $name;
+
+    /**
+     * @var     Money
+     */
     private $cost;
 
-    public function __construct($name, $cost)
+    public function __construct($name, Money $cost)
     {
         $this->name = $name;
         $this->cost = $cost;
