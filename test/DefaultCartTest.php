@@ -58,6 +58,16 @@ class DefaultCartTest
         $cart->pay($gateway);
     }
 
+    /**
+     * @Expect("Chrisguitarguy\RealUnitTesting\EmptyCartException")
+     */
+    public function testPayErrorsWhenNoProductsAreInCart()
+    {
+        $cart = new DefaultCart();
+
+        $cart->pay($this->paymentGateway());
+    }
+
     private function paymentGateway()
     {
         return \Mockery::mock('Chrisguitarguy\\RealUnitTesting\\PaymentGateway');
