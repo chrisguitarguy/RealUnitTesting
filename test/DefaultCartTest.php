@@ -51,13 +51,7 @@ class DefaultCartTest
     {
         $currency = new Currency('USD');
         $gateway = $this->paymentGateway();
-        $gateway->shouldReceive('charge')
-            ->once()
-            ->with(\Mockery::on(function ($amount) use ($currency) {
-                $this->assertMoney($amount);
-                $this->assertEquals(new Money(1000, $currency), $amount);
-                return true;
-            }));
+        $this->gatewayCharges($gateway, new Money(1000, $currency));
         $cart = new DefaultCart($currency);
         $cart->addProduct(new StubProduct('one product', new Money(1000, $currency)));
 
@@ -67,6 +61,17 @@ class DefaultCartTest
     private function paymentGateway()
     {
         return \Mockery::mock('Chrisguitarguy\\RealUnitTesting\\PaymentGateway');
+    }
+
+    private function gatewayCharges($paymentGateway, Money $expected)
+    {
+        $paymentGateway->shouldReceive('charge')
+            ->once()
+            ->with(\Mockery::on(function ($amount) use ($expected) {
+                $this->assertMoney($amount);
+                $this->assertEquals($expected, $amount);
+                return true;
+            }));
     }
 
     private function assertMoney($object)
