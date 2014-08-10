@@ -33,4 +33,14 @@ interface Cart
      * @return  float
      */
     public function total();
+
+    /**
+     * Use the a given payment gateway to pay the total for the cart.
+     *
+     * @since   1.0
+     * @param   PaymentGateway $gateway
+     * @throws  EmptyCartException when not items are in the cart
+     * @return  void
+     */
+    public function pay(PaymentGateway $gateway);
 }

@@ -56,4 +56,16 @@ class DefaultCart implements Cart
 
         return $total;
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function pay(PaymentGateway $gateway)
+    {
+        if (!$this->product) {
+            throw new EmptyCartException('Cannot pay for a cart with no items');
+        }
+
+        $gateway->charge($this->total());
+    }
 }
