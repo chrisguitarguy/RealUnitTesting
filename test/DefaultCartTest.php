@@ -47,6 +47,18 @@ class DefaultCartTest
         );
     }
 
+    public function testPayChargesTheTotalAmountInTheCart()
+    {
+        $gateway = new PaymentGatewaySpy();
+        $currency = new Currency('USD');
+        $cart = new DefaultCart($currency);
+        $cart->addProduct(new StubProduct('one product', new Money(1000, $currency)));
+
+        $cart->pay($gateway);
+
+        $gateway->assertCharged(new Money(1000, $currency));
+    }
+
     private function assertMoney($object)
     {
         $this->assertInstanceOf(

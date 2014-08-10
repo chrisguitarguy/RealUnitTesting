@@ -62,7 +62,7 @@ class DefaultCart implements Cart
      */
     public function pay(PaymentGateway $gateway)
     {
-        if (!$this->product) {
+        if (!$this->products) {
             throw new EmptyCartException('Cannot pay for a cart with no items');
         }
 
