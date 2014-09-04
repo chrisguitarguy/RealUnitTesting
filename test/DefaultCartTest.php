@@ -43,7 +43,7 @@ class DefaultCartTest
         $this->assertMoney($total);
         $this->assertTrue(
             (new Money(2100, $currency))->equals($total),
-            'Total should be zero for empty carts'
+            'Total should be the sum of all product costs'
         );
     }
 
