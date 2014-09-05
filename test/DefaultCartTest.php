@@ -77,11 +77,7 @@ class DefaultCartTest
     {
         $paymentGateway->shouldReceive('charge')
             ->once()
-            ->with(\Mockery::on(function ($amount) use ($expected) {
-                $this->assertMoney($amount);
-                $this->assertEquals($expected, $amount);
-                return true;
-            }));
+            ->with(\Mockery::mustBe($expected));
     }
 
     private function assertMoney($object)
